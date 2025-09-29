@@ -1,5 +1,8 @@
 # FireWall / VLAN Setup
 
+### Overview
+I seperated my network into 5 VLANs with LAN, Guests, and IoT Devices being the main VLANs. There are 2 more one for my devices and one for my brother these two were mainly for experimentation and practice. These VLANs were created to segment and isolate devices to improve performance, limit attack surface, and seperate traffic. Performance is improved by reducing broadcast domains and QoS can be enabled to prioritize important traffic. Attack surface is reduced by seperating critcal devices from less secure devices such as servers(critical) and IoT devices (less secure). Traffic can be seperated depending on function, compliance, and as said before for security reasons.
+
 ## Hardware
 ![Network Hardware](/Images/NetworkHardware.jpg "Network Hardware") <br>
 - Modem - xFI Gateway <br>
@@ -30,5 +33,3 @@
 
 ## Network Design & Segmentation
 ![Installing PfSense](/Images/VLANs.jpg "Installing PfSense") <br>
-### Overview
-I seperated my network into 5 VLANs with LAN, Guests, and IoT Devices being the main VLANs. There are 2 more one for my devices and one for my brother these two were mainly for experimentation and practice. These VLANs were created to segment and isolate devices to improve performance, limit attack surface, and seperate traffic. Performance is improved by reducing broadcast domains and QoS can be enabled to prioritize important traffic. Attack surface is reduced by seperating critcal devices from less secure devices such as servers(critical) and IoT devices (less secure). Traffic can be seperated depending on function, compliance, and as said before for security reasons.
